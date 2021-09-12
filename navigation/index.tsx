@@ -15,11 +15,13 @@ import useColorScheme from '../hooks/useColorScheme';
 import ModalScreen from '../screens/ModalScreen';
 import NotFoundScreen from '../screens/NotFoundScreen';
 import HomeScreen from '../screens/HomeScreen';
+
 import TabTwoScreen from '../screens/TabTwoScreen';
 import TabThreeScreen from '../screens/TabTwoScreen';
 import TabFourScreen from '../screens/TabTwoScreen';
 import { RootStackParamList, RootTabParamList, RootTabScreenProps, HomeParamList } from '../types';
 import LinkingConfiguration from './LinkingConfiguration';
+import CourseDetailScreen from '../screens/CourseDetailScreen';
 
 export default function Navigation({ colorScheme }: { colorScheme: ColorSchemeName }) {
   return (
@@ -117,12 +119,15 @@ function HomeNavigator() {
   return (
     <HomeStack.Navigator>
       <HomeStack.Screen
+        name="CourseScreen"
+        //component={HomeScreen}
+        component={CourseDetailScreen}
+        options={{
+          title: ''
+        }} />
+      <HomeStack.Screen
         name="HomeScreen"
         component={HomeScreen}
-        options={{ headerShown: false }} />
-      <HomeStack.Screen
-        name="HomeTwo"
-        component={TabTwoScreen}
         options={{ headerShown: false }} />
     </HomeStack.Navigator>
   )

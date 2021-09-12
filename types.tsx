@@ -33,7 +33,16 @@ export type RootTabParamList = {
 };
 export type HomeParamList = {
   HomeScreen: undefined;
-  HomeTwo: undefined;
+  CourseScreen: undefined;
+}
+
+export type Episode = {
+  id: string,
+  title: string,
+  poster: string,
+  duration: string,
+  plot: string,
+  video: string,
 }
 
 export type RootTabScreenProps<Screen extends keyof RootTabParamList> = CompositeScreenProps<
