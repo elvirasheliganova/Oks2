@@ -1,0 +1,15 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-oks2-dev-135632-authRole",
+      "UnauthRoleArn": "arn:aws:iam::518549961774:role/amplify-oks2-dev-135632-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::518549961774:role/amplify-oks2-dev-135632-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-oks2-dev-135632-deployment",
+      "UnauthRoleName": "amplify-oks2-dev-135632-unauthRole",
+      "StackName": "amplify-oks2-dev-135632",
+      "StackId": "arn:aws:cloudformation:eu-central-1:518549961774:stack/amplify-oks2-dev-135632/a5c0e500-1489-11ec-8615-02d08c8fd25c",
+      "AmplifyAppId": "d2hnjkyqfyado"
+    }
+  }
+}
